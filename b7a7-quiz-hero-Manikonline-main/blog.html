@@ -10,15 +10,47 @@
         .edit-font{
             font-size: 25px;
         }
+       
     </style>
 </head>
 <body>
     <header>
         <h1 class="text-center container mx-auto bg-sky-400 edit-font">Blogs</h1>
     </header>
-    <main class="container mx-auto bg-neutral-900 p-5">
-     
-      
+    <main >
+         <!-- blog question start here (3 question) -->
+        <section class="container mx-auto bg-neutral-900 p-5">
+            <div class="text-white p-5">
+                <h2 class="text-2xl text-sky-400">1. What are the difference between map() , filter(), forEach and find? </h2>
+                <p> <span class="font-bold text-blue-700">Answer: </span> The difference between map(),filter(),forEach() and find are discuss below:<br>
+                => Map() executes the same code on every element in an array and returns a new array with the updated elements.
+                <br>
+                =>filter() checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria.
+                <br>
+                =>forEach() is used to execute the same code on every element in an array but does not change the array and it returns undefined.
+                <br>
+                =>The find() method is an Array.prototype method which takes in a callback function and calls that function for every item it iterates over inside of the array.The find() method will only return the first instance of arry items it discovers within the array. Any other instance will then be subsequently ignored.
+                </p>
+               </div>
+              <div class="text-white p-5">
+                <h2 class="text-2xl text-sky-400">1. What are the difference Local storage, session storage and cookies? </h2>
+                <p> <span class="font-bold text-blue-700">Answer: </span> <br>
+                => Local storage is useful for storing data that the user will need to access later, such as offline data.
+                <br>
+                => Session storage is a great way to improve the performance of your web applications. 
+                <br>
+                =>Cookies are a good choice for storing data that should not be persisted for a long time, such as session IDs
+               
+                </p>
+              </div>
+              <div class="text-white p-5">
+                <h2 class="text-2xl text-sky-400">1.What is Event Loop? What does it works? </h2>
+                <p> <span class="font-bold text-blue-700">Answer: </span> <br>
+                    The event loop is the secret behind JavaScript’s asynchronous programming. JS executes all operations on a single thread, but using a few smart data structures, it gives us the illusion of multi-threading.The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.
+                </p>
+              </div>
+        </section>
+       
         
     </main>
     <footer></footer>

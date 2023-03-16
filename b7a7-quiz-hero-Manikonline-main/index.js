@@ -24,7 +24,7 @@ startQuiz.addEventListener("click", () => {
 
   let x = setInterval(() => {
     if (counterNum < 0) {
-      // display none
+      // display none 
       countDown.style.display='none'
       countDown.classList.remove("flex");
       countDown.classList.add("hidden");
@@ -49,8 +49,7 @@ startQuiz.addEventListener("click", () => {
 // All quiz data fetched from json
 const loadQuiz = async () => {
   const res = await fetch("./data/quiz.json");
-  // bracket add
-  const data = await res.json;
+  const data = await res.json();
    quizData = data;
   displayQuiz(data);
  

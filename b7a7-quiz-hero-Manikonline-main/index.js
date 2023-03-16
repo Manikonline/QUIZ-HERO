@@ -50,7 +50,7 @@ startQuiz.addEventListener("click", () => {
 const loadQuiz = async () => {
   const res = await fetch("./data/quiz.json");
   // bracket add
-  const data = await res.json();
+  const data = await res.json;
    quizData = data;
   displayQuiz(data);
  
@@ -70,7 +70,8 @@ const displayQuiz = (data) => {
     <div class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mr-3">
       ${i + 1}
     </div>
-    <p class="text-gray-800 text-sm">${quiz.question}</p>
+    // have to fixed
+    <p class="text-gray-800 text-sm">${quiz.quetion}</p>
   </div>
   <div class="grid grid-cols-2 gap-4 mt-5">
     ${displayQuizOptions(quiz.options, i)}
@@ -114,7 +115,8 @@ document.querySelector("#submit").addEventListener("click", () => {
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("results"));
+  // have to fixed
+  let storage = JSON.parse(localStorage.getItem("result"));
   console.log(storage)
   if (storage) {
     localStorage.setItem(

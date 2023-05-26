@@ -45,7 +45,7 @@ startQuiz.addEventListener("click", () => {
   }, 1000);
 });
 
-// All quiz data fetched from json
+// All quiz data fetched from  json file
 const loadQuiz = async () => {
   const res = await fetch("./data/quiz.json");
   const data = await res.json();
